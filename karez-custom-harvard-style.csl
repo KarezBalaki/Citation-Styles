@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<style xmlns="http://purl.org/net/xbiblio/csl" version="1.0" class="in-text">
+  <info>
+    <title>Custom Harvard Italic Journal</title>
+    <id>http://www.zotero.org/styles/custom-harvard-italic</id>
+    <category citation-format="author-date"/>
+    <updated>2026-04-13</updated>
+  </info>
+
+  <!-- In-text citation -->
+  <citation>
+    <layout delimiter="; ">
+      <group delimiter=" ">
+        <names variable="author">
+          <name and="text"/>
+        </names>
+        <date variable="issued">
+          <date-part name="year"/>
+        </date>
+      </group>
+    </layout>
+  </citation>
+
+  <!-- Bibliography -->
+  <bibliography hanging-indent="true">
+    <layout>
+
+      <names variable="author" delimiter=", ">
+        <name name-as-sort-order="all" initialize-with="." and="text"/>
+      </names>
+
+      <date variable="issued" prefix=", " suffix=". ">
+        <date-part name="year"/>
+      </date>
+
+      <text variable="title" suffix=", "/>
+
+      <text variable="container-title" font-style="italic" suffix=", "/>
+
+      <group suffix=", ">
+        <text variable="volume"/>
+        <text variable="issue" prefix="(" suffix=")"/>
+      </group>
+
+      <text variable="page" prefix="pp. " suffix=", "/>
+
+      <text variable="DOI" prefix="http://doi.org/"/>
+
+    </layout>
+  </bibliography>
+</style>
